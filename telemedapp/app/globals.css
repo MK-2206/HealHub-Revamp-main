@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* Professional Medical Color Variables */
+:root {
+  --medical-blue: #0066cc;
+  --trust-green: #00a651;
+  --calm-teal: #17a2b8;
+  --clean-white: #ffffff;
+  --soft-gray: #f8f9fa;
+  --text-dark: #2c3e50;
+  --light-blue: #f0f8ff;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--clean-white);
+  color: var(--text-dark);
+}
+
+/* Medical-Grade Button Styles */
+.btn-primary {
+  background-color: var(--medical-blue);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0052a3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--medical-blue);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: 2px solid var(--medical-blue);
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-blue);
+}
+
+/* Clean Medical Cards */
+.medical-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  transition: all 0.2s ease;
+}
+
+.medical-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Timeline Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Timeline Step Animations */
+.timeline-step {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.timeline-step:nth-child(1) { animation-delay: 0.1s; }
+.timeline-step:nth-child(2) { animation-delay: 0.2s; }
+.timeline-step:nth-child(3) { animation-delay: 0.3s; }
+.timeline-step:nth-child(4) { animation-delay: 0.4s; }
+
+/* Timeline Connector Animation */
+.timeline-connector {
+  animation: slideInLeft 0.8s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+/* Step Number Pulse Animation */
+.step-number {
+  animation: pulse 2s infinite;
+}
+
+/* Trust Indicators */
+.trust-badge {
+  background: var(--trust-green);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Enhanced Medical Cards for Timeline */
+.timeline-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--medical-blue), #0052a3);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.timeline-card:hover::before {
+  transform: scaleX(1);
+}
+
+.timeline-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 102, 204, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-card {
+    border-radius: 12px;
+  }
+  
+  .timeline-connector {
+    display: none;
+  }
+}
