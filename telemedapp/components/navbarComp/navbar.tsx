@@ -60,13 +60,13 @@ const Navbar = () => {
         <div className="hidden min-[1130px]:flex gap-6 text-[#4d4d4f] text-sm font-light">
           <button
             className="font-semibold hover:text-[#035fe9]"
-            onClick={() => router.push("http://localhost:3000/")}
+            onClick={() => router.push("/")}
           >
             Home
           </button>
           <button
             className="font-semibold hover:text-[#035fe9]"
-            onClick={() => router.push("http://localhost:3000/doctors")}
+            onClick={() => router.push("/doctors")}
           >
             Find Care
           </button>

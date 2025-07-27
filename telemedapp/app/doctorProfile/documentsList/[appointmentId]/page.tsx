@@ -24,7 +24,7 @@ const DocumentsListPage = () => {
   };
   const fetchDocuments = async () => {
     try {
-      const response = await fetch("http://localhost:3000/documents");
+      const response = await fetch("/documents");
       const data = await response.json();
       setDocuments(data);
     } catch (error) {
