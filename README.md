@@ -13,8 +13,7 @@ A modern telemedicine platform designed to connect patients with certified docto
 ## [Live Demo](https://healhub-telemedicine.vercel.app/)
 
 
-![Screenshot of HealHub](homepage.png)
-> Home page showcasing the AI chat assistant and instant consultation booking.
+
 
 ## Features
 
@@ -51,7 +50,7 @@ A modern telemedicine platform designed to connect patients with certified docto
 
 ## **Live Demo**
 
-Visit the live website: [HealHub](https://healhub-your-deployment.vercel.app)
+Visit the live website: [HealHub](https://healhub-telemedicine.vercel.app/)
 
 ---
 
