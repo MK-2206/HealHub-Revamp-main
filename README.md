@@ -11,7 +11,7 @@ A modern telemedicine platform designed to connect patients with certified docto
 ---
 
 ## [Live Demo](https://healhub-your-deployment.vercel.app)
-## [Video Demo](https://drive.google.com/file/d/your-video-id/view?usp=sharing)
+
 
 ![Screenshot of HealHub](homepage.png)
 > Home page showcasing the AI chat assistant and instant consultation booking.
