@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbarComp/navbar";
 import { ProfileProvider } from "@/context/ProfileContext";
 import { DoctorProvider } from "@/context/GetDoctorsContext";
+import HealHubChatBot from "@/components/HealHubChatBot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
           <ProfileProvider>
             <Navbar />
             {children}
+            <HealHubChatBot />
           </ProfileProvider>
         </DoctorProvider>
       </body>
