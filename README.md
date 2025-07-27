@@ -10,7 +10,7 @@ A modern telemedicine platform designed to connect patients with certified docto
 
 ---
 
-## [Live Demo](https://healhub-your-deployment.vercel.app)
+## [Live Demo](https://healhub-telemedicine.vercel.app/)
 
 
 ![Screenshot of HealHub](homepage.png)
