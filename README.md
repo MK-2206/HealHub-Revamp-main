@@ -1,5 +1,5 @@
 <div style="display: flex;flex-direction: row; align-items: center; justify-content: center;">
-  <img src="https://your-deployment-url.vercel.app/assets/logo.png" alt="HealHub Icon" width="100" />
+  <img src="https://your-deployment-url.vercel.app/assets/de.png" alt="HealHub Icon" width="100" />
 </div>
 
 # HealHub
